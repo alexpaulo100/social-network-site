@@ -6,4 +6,14 @@ Rails.application.routes.draw do
     root to: "home#index"
     resources :admins
   end
+
+  root to: "user/timeline#index"
+
+  
+  namespace :user do
+
+  end
+    
+
+
 end
