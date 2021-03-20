@@ -5,10 +5,8 @@ class Admin::AdminsController < AdminController
         @admins = Admin.order(id: :desc)
     end
 
-
     def new
         @admin = Admin.new
-    
     end
 
     def created
