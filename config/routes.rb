@@ -18,6 +18,10 @@ Rails.application.routes.draw do
     get 'following', to: "profile#following"
     get 'followers', to: "profile#followers"
     resources :posts, only: [:create, :destroy]
+      member do 
+        post :like_toggle
+      end
+    end
     resources :users, only: :show
     
 
